@@ -284,3 +284,15 @@ objArr.map((obj, index) => console.log(`index-${index} - value:${obj.name}[${obj
 /*TYPE - 5*/
 objArr.filter((obj, index) => console.log(`index-${index} - value:${obj.name}`) );
 ```
+> **Map**
+```js
+let arr1 = ["ReactDev", 10];
+let arr2 = ["NodeDev", 8];
+let arr3 = ["NextDev", 6];
+let arr4 = ["LaravelDev", 20];
+
+const devs = new Map([arr1, arr2, arr3, arr4]);
+
+console.log(devs.get('NextDev'));//6
+console.log(devs.get('NodeDev'));//8
+```
