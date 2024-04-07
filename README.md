@@ -253,3 +253,34 @@ arr.map((value, index) => console.log(`index-${index} - value:${value}`) );
 /*TYPE - 5*/
 arr.filter((value, index) => console.log(`index-${index} - value:${value}`) );
 ```
+> **How may way to print javascript array of objects**
+```js
+let objArr = [
+  {name:"User1", skill:"mode", exp:5},
+  {name:"User2", skill:"mongo", exp:8},
+  {name:"User3", skill:"react", exp:12},
+  {name:"User4", skill:"angular", exp:6}
+];
+
+
+/*TYPE - 1*/
+for (let item of objArr) {
+  console.log(`${item.name}(${item.exp})`);
+}
+
+/*TYPE - 2*/
+for (let i = 0; i < objArr.length; i++) {
+  console.log(objArr[i].name + "==>" + objArr[i].skill);
+}
+
+/*TYPE - 3*/
+objArr.forEach((obj, index) => {
+   console.log(`index-${index} - value:${obj.name}-${obj.skill}-${obj.exp}`);
+});
+
+/*TYPE - 4*/
+objArr.map((obj, index) => console.log(`index-${index} - value:${obj.name}[${obj.skill}]`) );
+
+/*TYPE - 5*/
+objArr.filter((obj, index) => console.log(`index-${index} - value:${obj.name}`) );
+```
