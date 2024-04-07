@@ -324,3 +324,14 @@ text.startsWith("Hello") // Returns true
 var text = "John Doe";
 text.endsWith("Doe") // Returns true
 ```
+> **Array - Keys, Values, Entries**
+```js
+const arr = ["php", "asp", "jsp", "react", "node"];
+let arrKeys = arr.keys(); //get the keys in an array
+let arrVals = arr.values(); //get the values in an array
+let arrEntries = arr.entries(); //get key, value in an array
+
+arrKeys.forEach((v, i) => console.log(`Pos:${i} => ${v}`));
+arrVals.forEach((v, i) => console.log(`Pos:${i} => ${v}`));
+arrEntries.forEach((v, i) => console.log(`Pos:${i} => ${v}`));
+```
