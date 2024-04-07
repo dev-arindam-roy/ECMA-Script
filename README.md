@@ -313,6 +313,7 @@ function sum(...args) {
 let x = sum(4, 9, 16, 25, 29, 100, 66, 77);
 console.log(x);//326
 ```
+> **String**
 ```js
 let text = "Hello world, welcome to the universe.";
 text.includes("world") // Returns true
