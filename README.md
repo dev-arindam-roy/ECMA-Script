@@ -374,3 +374,11 @@ console.log(Object.keys(obj)); //return the object keys in an array
 console.log(Object.values(obj)); //return the object values in an array
 console.log(Object.entries(obj)); //return key, value array in an array
 ```
+> **Export & Import**
+```js
+/* Its name export */
+import { name, age } from "./person.js";
+
+/* Its default export */
+import message from "./message.js";
+```
