@@ -125,3 +125,70 @@ const getValue6 = (p, t, r) =>  {
 };
 console.log(getValue6(1000, 5, 4.5)); //"The total amount is 1225"
 ```
+> **Spread Operator**
+```js
+/*
+Spread Operator merge in an single array
+but not discard the same elements/items
+Like below:
+*/
+
+let arr1 = ["php", "java", "node"];
+let arr2 = ["mysql", "mongo", "firebase"];
+let resArr1 = [...arr1, ...arr2];
+console.log(resArr1);
+/*
+OUTPUT:
+["php", "java", "node", "mysql", "mongo", "firebase"]
+*/
+
+
+let arr3 = ["php", "mysql", "next"];
+let arr4 = ["mysql", "angular", "mongo"];
+let arr5 = ["angular", "vue", "next"];
+let resArr2 = [...arr3, ...arr3, ...arr5];
+console.log(resArr2);
+/*
+OUTPUT:
+["php", "mysql", "next", "php", "mysql", "next", "angular", "vue", "next"]
+*/
+
+let arr6 = [10, 25, 30, 50];
+let arr7 = [30, 35, 40, 50];
+let resArr3 = [...arr6, ...arr7];
+console.log(resArr3);
+/*
+OUTPUT:
+[10, 25, 30, 50, 30, 35, 40, 50]
+*/
+
+/*
+To get unique values from the result array
+use below code:
+*/
+let uniqueRes1 = [...new Set(resArr1)];
+console.log(uniqueRes1);
+//["php", "java", "node", "mysql", "mongo", "firebase"]
+
+let uniqueRes2 = [...new Set(resArr2)];
+console.log(uniqueRes2);
+//["php", "mysql", "next", "angular", "vue"]
+
+let uniqueRes3 = [...new Set(resArr3)];
+console.log(uniqueRes3);
+//[10, 25, 30, 50, 35, 40]
+
+/*
+Final unique array in asc sort 
+*/
+console.log(uniqueRes1.sort());
+console.log(uniqueRes2.sort());
+console.log(uniqueRes3.sort());
+
+/*
+Final unique array in desc sort 
+*/
+console.log(uniqueRes1.reverse());
+console.log(uniqueRes2.reverse());
+console.log(uniqueRes3.reverse());
+```
