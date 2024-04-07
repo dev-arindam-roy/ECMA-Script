@@ -1,7 +1,7 @@
-# ECMA-Script
-ECMA Script All
+# ECMA Script
+ECMA Script All useful functions with examples that make your development easy & faster
 
-## ES6-2015
+## ES6
 
 > **const, let, var**
 ```js
