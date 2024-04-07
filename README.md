@@ -69,4 +69,59 @@ fun1(100); //first: "Hello 100" second: 20
 fun1(25); //only: 20
 fun1(1000); //first: [object Object] {name: "Arindam",skill: "JS"} second: 20
 ```
+> **Arrow Function**
+```js
+/*
+Normal/basic function
+*/
+function add (num1, num2) {
+  return num1 + num2;
+}
+console.log(add(2, 6)); //8
 
+/*
+No parameter
+No return
+No braces
+*/
+const getValue1 = () => 25;
+console.log(getValue1()); //25
+
+/*
+have 1 parameter
+No return
+No braces
+*/
+const getValue2 = (x) => x * 2;
+console.log(getValue2(2)); //4
+
+/*
+have 2 parameters
+No return
+No braces
+*/
+const getValue3 = (x, y) => x + y;
+console.log(getValue3(2, 4)); //6
+
+
+/*
+have 2 parameters
+have return
+have braces
+if used braces then should use return
+*/
+const getValue4 = (x, y) => { return x * y };
+console.log(getValue4(2, 4)); //8
+
+const getValue5 = (p, t, r) =>  {
+  return `Intarest is ${((p*t*r)/100)}`;
+};
+console.log(getValue5(1000, 5, 4.5)); //"Intarest is 225"
+
+const getValue6 = (p, t, r) =>  {
+  let intarest = (p*t*r)/100;
+  let total = intarest + p;
+  return `The total amount is ${total}`;
+};
+console.log(getValue6(1000, 5, 4.5)); //"The total amount is 1225"
+```
