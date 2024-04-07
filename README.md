@@ -192,3 +192,15 @@ console.log(uniqueRes1.reverse());
 console.log(uniqueRes2.reverse());
 console.log(uniqueRes3.reverse());
 ```
+```js
+/*
+
+Array to iterable into more arguments
+*/
+let arr1 = [20, 40, 10, 15, 25, 75, 60, 90];
+console.log(Math.max(arr1)); //NaN
+console.log(Math.max(...arr1)); //90
+
+console.log(Math.min(arr1)); //NaN
+console.log(Math.min(...arr1)); //10
+```
