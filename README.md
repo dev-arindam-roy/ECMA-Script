@@ -313,3 +313,13 @@ function sum(...args) {
 let x = sum(4, 9, 16, 25, 29, 100, 66, 77);
 console.log(x);//326
 ```
+```js
+let text = "Hello world, welcome to the universe.";
+text.includes("world") // Returns true
+
+let text = "Hello world, welcome to the universe.";
+text.startsWith("Hello") // Returns true
+
+var text = "John Doe";
+text.endsWith("Doe") // Returns true
+```
