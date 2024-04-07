@@ -335,3 +335,42 @@ arrKeys.forEach((v, i) => console.log(`Pos:${i} => ${v}`));
 arrVals.forEach((v, i) => console.log(`Pos:${i} => ${v}`));
 arrEntries.forEach((v, i) => console.log(`Pos:${i} => ${v}`));
 ```
+> **Object - Keys, Values, Entries, HasOwnProperty, Delete object item**
+```js
+const arr = ["php", "asp", "jsp", "react", "node"];
+let arrKeys = arr.keys(); //get the keys in an array
+let arrVals = arr.values(); //get the values in an array
+let arrEntries = arr.entries(); //get key, value in an array
+
+arrKeys.forEach((v, i) => console.log(`Pos:${i} => ${v}`));
+arrVals.forEach((v, i) => console.log(`Pos:${i} => ${v}`));
+arrEntries.forEach((v, i) => console.log(`Pos:${i} => ${v}`));
+
+const obj = {
+  name: "Arindam",
+  skill: "Full Stack Developer",
+  exp: 14
+};
+
+console.log(obj); 
+console.log(obj.name);
+console.log(obj.skill);
+console.log((obj.skill) ? obj.skill : null);
+console.log(obj.hasOwnProperty('exp') ? obj.exp : null);
+if (obj.hasOwnProperty('skill')) {
+  delete obj.skill;
+}
+console.log(obj);
+if (obj.hasOwnProperty('exp')) {
+  obj.exp = 20;
+}
+console.log(obj);
+if (!obj.hasOwnProperty('skill')) {
+  obj.skill = "Senior Full Stack Developer";
+}
+console.log(obj);
+
+console.log(Object.keys(obj)); //return the object keys in an array
+console.log(Object.values(obj)); //return the object values in an array
+console.log(Object.entries(obj)); //return key, value array in an array
+```
