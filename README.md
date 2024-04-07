@@ -204,3 +204,27 @@ console.log(Math.max(...arr1)); //90
 console.log(Math.min(arr1)); //NaN
 console.log(Math.min(...arr1)); //10
 ```
+> **For/of**
+```js
+let arr1 = [10, 90, 20, 60, 30, 50];
+for (let item of arr1) {
+  console.log(item);
+}
+
+let arr2 = ["php", "asp", "jsp", "laravel", "node", "react"];
+for (let item of arr2) {
+  console.log(item);
+}
+
+let obj1 = [
+  {name:"User1", skill:"mode", exp:5},
+  {name:"User2", skill:"mongo", exp:8},
+  {name:"User3", skill:"react", exp:12},
+  {name:"User4", skill:"angular", exp:6}
+];
+
+for (let item of obj1) {
+  //console.log(item);
+  console.log(item.name, item.exp);
+}
+```
