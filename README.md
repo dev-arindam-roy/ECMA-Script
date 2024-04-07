@@ -228,3 +228,28 @@ for (let item of obj1) {
   console.log(item.name, item.exp);
 }
 ```
+> **How may wahy to print a javascript array**
+```js
+let arr = [10, 90, 20, 60, 30, 50];
+
+/*TYPE - 1*/
+for (let item of arr) {
+  console.log(item);
+}
+
+/*TYPE - 2*/
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
+}
+
+/*TYPE - 3*/
+arr.forEach((value, index) => {
+   console.log(`index-${index} - value:${value}`);
+});
+
+/*TYPE - 4*/
+arr.map((value, index) => console.log(`index-${index} - value:${value}`) );
+
+/*TYPE - 5*/
+arr.filter((value, index) => console.log(`index-${index} - value:${value}`) );
+```
